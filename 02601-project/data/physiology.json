@@ -1,0 +1,18 @@
+{
+  "_comment": "Representative 70-kg adult. Units: volumes L, flows L/h, viscosity Pa*s, vessel dimensions mm, velocity mm/s. Sources in references.csv.",
+  "default_adult": {
+    "body_weight": 70.0,
+    "blood_volume": 5.0,
+    "liver_volume": 1.8,
+    "tissue_volume": 40.0,
+    "hepatic_flow": 90.0,
+    "tissue_flow": 250.0,
+    "blood_viscosity": 0.0035,
+    "plasma_viscosity": 0.0012,
+    "temperature": 310.15,
+    "vessel_radius": 0.1,
+    "vessel_length": 10.0,
+    "blood_velocity": 2.0,
+    "heart_rate": 70.0
+  }
+}

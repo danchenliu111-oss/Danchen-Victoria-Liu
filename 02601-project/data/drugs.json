@@ -1,0 +1,39 @@
+{
+  "_comment": "Units: dose mg, MW g/mol, radius nm (null = estimate from MW), solubility mg/mL, rates 1/h, clearances L/h, partitions dimensionless. Values are literature-range estimates; see references.csv. Educational model only, not dosing advice.",
+  "acetaminophen": {
+    "name": "Acetaminophen (paracetamol)",
+    "dose_mg": 1000.0,
+    "molecular_weight": 151.16,
+    "molecular_radius": null,
+    "solubility": 14.0,
+    "logP": 0.46,
+    "absorption_rate": 3.0,
+    "hepatic_clearance": 26.0,
+    "renal_clearance": 0.8,
+    "liver_partition": 1.0,
+    "tissue_partition": 1.3,
+    "fraction_absorbed": 1.0,
+    "scenarios": {
+      "fasted": {"gastric_emptying_rate": 4.0, "absorption_modifier": 1.0},
+      "fed":    {"gastric_emptying_rate": 1.0, "absorption_modifier": 0.8}
+    }
+  },
+  "caffeine": {
+    "name": "Caffeine",
+    "dose_mg": 100.0,
+    "molecular_weight": 194.19,
+    "molecular_radius": null,
+    "solubility": 21.6,
+    "logP": -0.07,
+    "absorption_rate": 3.0,
+    "hepatic_clearance": 7.5,
+    "renal_clearance": 0.1,
+    "liver_partition": 1.0,
+    "tissue_partition": 0.88,
+    "fraction_absorbed": 1.0,
+    "scenarios": {
+      "fasted": {"gastric_emptying_rate": 4.0, "absorption_modifier": 1.0},
+      "fed":    {"gastric_emptying_rate": 1.0, "absorption_modifier": 1.0}
+    }
+  }
+}

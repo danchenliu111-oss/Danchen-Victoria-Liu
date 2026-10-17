@@ -1,0 +1,18 @@
+parameter,drug,value,unit,source,status
+blood_volume,all,5.0,L,"Brown RP et al. (1997) Physiological parameter values for PBPK models. Toxicol Ind Health 13:407-484",to verify (Person 3)
+liver_volume,all,1.8,L,"Brown et al. (1997); Davies B & Morris T (1993) Pharm Res 10:1093-1095",to verify (Person 3)
+hepatic_flow,all,90,L/h,"Davies & Morris (1993): ~1.45 L/min liver blood flow",to verify (Person 3)
+tissue_flow,all,250,L/h,"Cardiac output (~5.6 L/min) minus hepatic flow; Davies & Morris (1993)",simplified assumption
+tissue_volume,all,40,L,"Lumped non-central tissue; simplified assumption",simplified assumption
+plasma_viscosity,all,0.0012,Pa*s,"Typical plasma viscosity at 37 C (~1.1-1.3 mPa*s)",to verify (Person 3)
+blood_viscosity,all,0.0035,Pa*s,"Typical whole-blood viscosity at high shear (~3-4 mPa*s)",to verify (Person 3)
+vessel_radius,all,0.1,mm,"Representative small artery/arteriole; illustrative",simplified assumption
+blood_velocity,all,2.0,mm/s,"Representative arteriolar mean velocity; illustrative",simplified assumption
+hepatic_clearance,acetaminophen,26,L/h,"Chosen so systemic CL ~20 L/h (~5 mL/min/kg) and F ~0.8; Forrest JA, Clements JA, Prescott LF (1982) Clin Pharmacokinet 7:93-107",to verify (Person 3)
+renal_clearance,acetaminophen,0.8,L/h,"Small fraction excreted unchanged; Forrest et al. (1982)",to verify (Person 3)
+tissue_partition,acetaminophen,1.3,-,"Chosen so Vd ~0.9 L/kg (~60 L); Forrest et al. (1982)",to verify (Person 3)
+absorption_rate,acetaminophen,3.0,1/h,"Chosen to give fasted Tmax ~0.5-1 h",fitted / to verify
+gastric_emptying_rate,fasted,4.0,1/h,"Fast emptying when fasted (half-time ~10 min); simplified assumption",simplified assumption
+gastric_emptying_rate,fed,1.0,1/h,"Food slows gastric emptying (half-time ~40 min); simplified assumption",simplified assumption
+hepatic_clearance,caffeine,7.5,L/h,"Chosen so systemic CL ~0.1 L/h/kg; Arnaud MJ (2011) Handb Exp Pharmacol 200:33-91",to verify (Person 3)
+tissue_partition,caffeine,0.88,-,"Chosen so Vd ~0.6 L/kg; Arnaud (2011)",to verify (Person 3)
